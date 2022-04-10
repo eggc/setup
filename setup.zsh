@@ -15,7 +15,11 @@ function install_brew() {
     read -k "YES_OR_NO?Ok? (y/n): "
 
     if [[ $YES_OR_NO == y ]]; then
-        $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+        mkdir -p ~/tmp/setup/
+        cd ~/tmp/setup/
+        curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+        chmod +x ./install.sh
+        ./install.sh
     fi
 }
 
