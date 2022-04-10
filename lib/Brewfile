@@ -6,7 +6,4 @@ cask "emacs"
 cask "iterm2"
 cask "karabiner-elements"
 cask "spectacle"
-
-# mac OS では安定版が安定してないので nightly を使う
-# cask "sequel-pro"
-cask "sequel-pro-nightly"
+cask "sequel-pro"
